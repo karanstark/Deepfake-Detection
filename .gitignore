@@ -1,0 +1,16 @@
+# Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Ignore large model or dataset files
+*.h5
+*.pkl
+*.pth
+*.ckpt
+*.tflite
+
+# Ignore temporary files
+.DS_Store
+*.log
+*.tmp
