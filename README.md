@@ -119,7 +119,7 @@ You are free to use, modify, and distribute this project with proper attribution
 ## 👤 Author
 
 **Karan Stark**
-GitHub: https://github.com/karanstark)
+GitHub: https://github.com/karanstark
 
 ---
 
