@@ -1,62 +1,126 @@
- 🧠 Deepfake Detection Using CNN
+# 🧠 Deepfake Detection Using CNN
 
-This project implements a Convolutional Neural Network (CNN)-based model to detect deepfake images and videos.  
-It uses TensorFlow and Keras to train and evaluate the model for **real vs fake** face classification.
+A **Convolutional Neural Network (CNN)** based deep learning project to detect **deepfake images and videos**.
+This system classifies face images as **Real** or **Fake** using **TensorFlow** and **Keras**.
 
+---
 
- 🚀 Project Overview
+## 🚀 Project Overview
 
-Deepfakes are AI-generated fake media that manipulate images or videos to replace one person's likeness with another's.  
-This project aims to build a deep learning model capable of detecting such manipulations with high accuracy.
+Deepfakes are AI-generated media where a person's face is manipulated or replaced using deep learning techniques. These fake visuals pose serious threats in misinformation, identity theft, and digital fraud.
 
-Key Highlights:
-- Built using TensorFlow and Keras  
-- Uses a CNN architecture for image classification  
-- Includes preprocessing, training, and evaluation scripts  
-- Modular and easy-to-modify code structure  
+This project focuses on building an effective CNN-based classifier capable of detecting such manipulated face images.
 
- 📂 Folder Structure
- Deepfake-Detection/
+### ✨ Key Features
+
+* CNN-based deep learning model
+* Binary classification: **Real (0) vs Fake (1)**
+* Built with TensorFlow & Keras
+* Modular, clean, and beginner-friendly code
+* Easy to extend for video-based detection
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python 3.x**
+* **TensorFlow 2.20.0**
+* **Keras**
+* **NumPy**
+* **Pandas**
+* **scikit-learn**
+* **OpenCV**
+* **Matplotlib**
+
+---
+
+## 📂 Project Structure
+
+```
+Deepfake-Detection/
 │
-├── model_training.py # Main script for training the CNN model
-├── deepfake_cnn_model.h5 # Trained model file (not tracked in Git)
-├── train_images/ # Folder containing training images
-├── fake_cifake_preds.json # JSON file containing image labels
-├── venv/ # Virtual environment (ignored in Git)
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── model_training.py          # CNN model training script
+├── deepfake_cnn_model.h5      # Trained model file (ignored in Git)
+├── train_images/              # Dataset directory (real & fake images)
+├── fake_cifake_preds.json     # Image labels (ground truth)
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+└── venv/                      # Virtual environment (ignored in Git)
+```
 
+---
 
-⚙️ Installation and Setup
+## ⚙️ Installation & Setup
 
- 1️⃣ Clone this repository
+### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/karanstark/Deepfake-Detection.git
 cd Deepfake-Detection
+```
 
-🧩 Requirements
-Main libraries used:
-TensorFlow 2.20.0
-Keras
-NumPy
-Pandas
-scikit-learn
-OpenCV
-Matplotlib
-All required packages are listed in requirements.txt.
+### 2️⃣ Create a Virtual Environment (Optional but Recommended)
 
-📊 Results
+```bash
+python -m venv venv
+source venv/bin/activate      # Linux/Mac
+venv\\Scripts\\activate         # Windows
+```
 
-After training, the model classifies images as real (0) or fake (1) with good accuracy.
-You can modify hyperparameters, epochs, or CNN layers for improved performance.
+### 3️⃣ Install Dependencies
 
-💡 Future Improvements
+```bash
+pip install -r requirements.txt
+```
 
-Add support for video-based detection using frame extraction
+---
 
-Integrate a web interface for real-time testing
+## 🧪 Model Training
 
-Use transfer learning (e.g., EfficientNet, XceptionNet) for better accuracy.
+To train the CNN model, run:
 
-License:
-This project is licensed under the MIT License.
+```bash
+python model_training.py
+```
+
+The trained model will be saved as:
+
+```
+deepfake_cnn_model.h5
+```
+
+---
+
+## 📊 Results
+
+* The model successfully classifies face images as **Real (0)** or **Fake (1)**
+* Performance depends on dataset size, image quality, and training epochs
+* Accuracy can be improved by tuning hyperparameters or using advanced architectures
+
+---
+
+## 🔮 Future Enhancements
+
+* 🎥 **Video Deepfake Detection** using frame extraction
+* 🧠 **Transfer Learning** with EfficientNet, XceptionNet, or ResNet
+* 🌐 **Web Application** for real-time deepfake detection
+* 📈 Improve performance using data augmentation & larger datasets
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this project with proper attribution.
+
+---
+
+## 👤 Author
+
+**Karan Stark**
+GitHub: https://github.com/karanstark)
+
+---
+
+⭐ If you like this project, don’t forget to **star the repository**!
